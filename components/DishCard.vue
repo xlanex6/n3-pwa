@@ -5,11 +5,19 @@
       <h3>{{ burger.name }}</h3>
       <p>{{ burger.price / 100 }} $</p>
     </div>
-    <button class="w-full text-white uppercase font-semi bg-red-600 rounded-full py-1 ">Ajouter</button>
+    <button class="w-full text-white uppercase font-semi bg-red-600 rounded-full py-1 "
+      @click="addToCart">Ajouter</button>
 
   </div>
 </template>
 
 <script setup>
-defineProps(['burger'])
+const props = defineProps(['burger'])
+
+const cart = useState('cart', () => [])
+
+function addToCart() {
+  cart.value.push(props.burger)
+}
+
 </script>
