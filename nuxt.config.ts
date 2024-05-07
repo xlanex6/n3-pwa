@@ -12,17 +12,17 @@ export default defineNuxtConfig({
       theme_color: "#FF0000",
       icons: [
         {
-          src: 'android-launchericon-192-192.png',
+          src: 'pwa-192-192.png',
           sizes: '192x192',
           type: 'image/png',
         },
         {
-          src: 'android-launchericon-512-512.png',
+          src: 'pwa-512-512.png',
           sizes: '512x512',
           type: 'image/png',
         },
         {
-          src: 'android-launchericon-512-512.png',
+          src: 'pwa-512-512.png',
           sizes: '512x512',
           type: 'image/png',
           purpose: 'any maskable',
