@@ -22,7 +22,7 @@ export default defineNuxtConfig({
           type: 'image/png',
         },
         {
-          src: 'pwa-512-512.png',
+          src: 'pwa-512-512-maskable.png',
           sizes: '512x512',
           type: 'image/png',
           purpose: 'any maskable',
